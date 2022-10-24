@@ -1,14 +1,13 @@
 #include <stdio.h>
 
-/*
+/**
  * main - Entry point
  *
  * Description: C program print size of diffenent types using sizeof
  *
  * Return: Always 0 (Succesful)
  */
- 
- int main(void)
+int main(void)
 {
 	printf("Size of a char: %d byte(s)\n", sizeof(char));
 	printf("Size of an int: %d byte(s)\n", sizeof(int));
