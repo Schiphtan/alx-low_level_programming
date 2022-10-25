@@ -15,9 +15,9 @@ int main(void)
 		{
 			for (z = y + 1; y < 10; y++)
 			{
-				putchar((x % 10) + '0');
-				putchar((y % 10) + '0');
-				putchar((z % 10) + '0');
+				putchar((x % 10) + 48);
+				putchar((y % 10) + 48);
+				putchar((z % 10) + 48);
 
 				if (x == 7 && y == 8 && z == 9)
 					continue;
