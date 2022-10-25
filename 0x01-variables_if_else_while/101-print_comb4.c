@@ -9,21 +9,24 @@ int main(void)
 {
 	int x, y, z;
 
-	for (x = 0; x < 8; x++)
+	for (x = 0; x <= '9'; x++)
 	{
-		for (y = x + 1; y < 9; x++)
+		for (y = x + 1; y <= '9'; x++)
 		{
-			for (z = y + 1; y < 10; y++)
+			for (z = y + 1; y <= '9'; y++)
 			{
-				putchar((x % 10) + 48);
-				putchar((y % 10) + 48);
-				putchar((z % 10) + 48);
+				if (x < y && y < z)
+				{
+					putchar(x);
+					putchar(y);
+					putchar(z);
 
-				if (x == 7 && y == 8 && z == 9)
-					continue;
-				putchar(',');
-
-				putchar(' ');
+					if (x != '7')
+					{
+						putchar(',');
+						putchar(' ');
+					}
+				}
 			}
 		}
 	}
