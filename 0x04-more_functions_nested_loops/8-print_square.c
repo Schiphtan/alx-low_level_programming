@@ -2,12 +2,12 @@
 
 /**
   * print_square - prints a square, followed by a new line
-  * @size: size of square
+  * @n: size of square
   */
 
-void print_square(int size)
+void print_square(int n)
 {
-	if (size <= 0)
+	if (n <= 0)
 		_putchar('\n');
 	else
 	{
