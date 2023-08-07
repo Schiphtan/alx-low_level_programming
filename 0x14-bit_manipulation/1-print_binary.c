@@ -12,7 +12,7 @@ void print_binary(unsigned long int n)
 
 	for (x = 63; x >= 0; x--)
 	{
-		current = n >> i;
+		current = n >> x;
 
 		if (current & 1)
 		{
@@ -20,6 +20,6 @@ void print_binary(unsigned long int n)
 			count++;
 		}
 	}
-	if (!coutn)
+	if (!count)
 		_putchar('0');
 }
